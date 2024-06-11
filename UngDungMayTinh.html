@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h3>Calculator</h3>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="button" value="+"  onclick="HamCong()">
+<input type="button" value="-" onclick="HamTru()">
+<input type="button" value="*" onclick="HamNhan()">
+<input type="button" value="/" onclick="HamChia()">
+
+<script>
+
+    function HamCong()
+    {
+        let a=parseInt(document.getElementById("num1").value);
+        let b=parseInt(document.getElementById("num2").value);
+        let ketqua=a+b;
+        document.write("ket qua la:"+ketqua)
+    }
+    function HamTru()
+    {
+        let a=parseInt(document.getElementById("num1").value);
+        let b=parseInt(document.getElementById("num2").value);
+        let ketqua=a-b;
+        document.write("ket qua la:"+ketqua)
+    }
+    function HamNhan()
+    {
+        let a=parseInt(document.getElementById("num1").value);
+        let b=parseInt(document.getElementById("num2").value);
+        let ketqua=a*b;
+        document.write("ket qua la:"+ketqua)
+    }
+    function HamChia()
+    {
+        let a=parseInt(document.getElementById("num1").value);
+        let b=parseInt(document.getElementById("num2").value);
+        let ketqua=a/b;
+        document.write("ket qua la:"+ketqua)
+    }
+</script>
+
+</body>
+</html>
